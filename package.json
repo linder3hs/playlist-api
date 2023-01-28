@@ -1,0 +1,28 @@
+{
+  "name": "project-u7-a2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "4.9.0",
+    "cors": "2.8.5",
+    "dotenv": "16.0.3",
+    "express": "4.18.2",
+    "jsonwebtoken": "9.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.13",
+    "@types/node": "18.11.18",
+    "nodemon": "2.0.20",
+    "prisma": "4.9.0",
+    "tslib": "2.5.0",
+    "typescript": "4.9.4"
+  }
+}
