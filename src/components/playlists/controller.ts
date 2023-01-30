@@ -61,3 +61,18 @@ export const update = async (
     return failure({ res, message: error });
   }
 };
+
+export const destroy = async (
+  req: Request,
+  res: Response
+): Promise<Response> => {
+  try {
+    const id = Number(req.params.id);
+
+    await prisma.playlist.delete({ where: { id } });
+
+    return success({ res, status: 201, data: "success delete" });
+  } catch (error) {
+    return failure({ res, message: error });
+  }
+};
